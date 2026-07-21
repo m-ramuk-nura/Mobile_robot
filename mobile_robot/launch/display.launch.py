@@ -10,7 +10,7 @@ from launch_ros.parameter_descriptions import ParameterValue
 
 def generate_launch_description():
     pkg_share = get_package_share_directory('mobile_robot')
-    default_urdf_path = os.path.join(pkg_share, 'urdf', 'mobile_robot.urdf')
+    default_urdf_path = os.path.join(pkg_share, 'urdf', 'mobile_robot.urdf.xacro')
     default_rviz_path = os.path.join(pkg_share, 'rviz', 'urdf.rviz')
 
     model_arg = DeclareLaunchArgument(

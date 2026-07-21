@@ -589,4 +589,13 @@
     <axis
       xyz="0 0 0" />
   </joint>
+  <gazebo>
+  <plugin
+      filename="libign_ros2_control-system.so"
+      name="ign_ros2_control::IgnitionROS2ControlPlugin">
+
+    <parameters>$(find mobile_robot)/config/controllers.yaml</parameters>
+
+  </plugin>
+</gazebo>
 </robot>

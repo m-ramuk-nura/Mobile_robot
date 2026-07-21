@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot name="mobile_robot" xmlns:xacro='http://www.ros.org/wiki/xacro'>
+    <xacro:include filename="$(find mobile_robot)/urdf/mobile_robot.urdf"/>
+    <xacro:include filename="$(find mobile_robot)/urdf/mobile_robot_ros2control.xacro"/>
+</robot>
